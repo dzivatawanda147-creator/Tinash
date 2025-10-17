@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam McDonald - Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+   body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+        /* Adjusted margin-bottom for a tighter header */
+        .header-name {
+            color: #17a2b8;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 0.2rem; /* Reduced from 0.5rem */
+        }
+        /* Adjusted margin-bottom for a tighter header */
+        .header-contact {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem; /* Reduced from 2rem */
+        }
+        /* Adjusted margin-top for tighter section spacing */
+        .section-title {
+            color: #17a2b8;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 1rem; /* Reduced from 2rem */
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+        .job-title {
+            font-weight: bold;
+            margin-bottom: 0.2rem;
+        }
+        .company-name {
+            font-weight: bold;
+        }
+        .date-range {
+            color: #666;
+            font-weight: bold;
+        }
+        .location {
+            color: #666;
+        }
+        ul {
+            margin-top: 0.5rem;
+        }
+        .skills-list {
+            list-style: disc;
+            padding-left: 1.2rem;
+        }
+        .language-bar {
+            height: 8px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            /* overflow: hidden; Removed because we use d-flex for segmented bars */
+            margin-top: 0.5rem;
+            display: flex; /* Added flex to style */
+            width: 100%; /* Ensure it spans the container */
+            padding: 0 1px; /* Small padding to ensure rounded ends are visible */
+        }
+        .language-progress {
+            height: 100%;
+            background-color: #e0e0e0; /* Default background for un-progressed segments */
+            border-radius: 10px;
+        }
+        .language-bar > .language-progress:first-child {
+             border-top-left-radius: 10px !important;
+             border-bottom-left-radius: 10px !important;
+        }
+        .language-bar > .language-progress:last-child {
+             border-top-right-radius: 10px !important;
+             border-bottom-right-radius: 10px !important;
+        }
+        .language-level {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+        /* Custom styles for SKILLS and LANGUAGES section layout */
+        .left-col-title {
+            /* Keep the same styling as section-title but reduce margin to align better with content */
+            color: #17a2b8;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 1rem; /* Reduced from 2rem to match .section-title */
+            margin-bottom: 0; /* Important to remove bottom margin */
+            letter-spacing: 1px;
+        }
+        .content-container {
+            margin-top: 1rem; /* Reduced from 2rem to align with the new title margin */
+        }  
+    </style>
+        
+</head>
+<body>
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="header-name">SAM MCDONALD</h1>
+                <p class="header-contact">Liverpool, L1 4JA | 07912345678 | s.mcdonald@emailz.co.uk</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">SUMMARY</h2>
+                <p>Resourceful and adaptable Manager with over 11 years of experience in scheduling, staff training, protocol development, and process improvement. Meticulous team builder with expertise in employee engagement, customer relationship management (CRM), time management, and conflict resolution. Customer-focused leader seeking to leverage background into assistant or operations manager role with progressive organisation.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">EXPERIENCE</h2>
+
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="date-range mb-0">09/2018 to Current</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p class="job-title mb-0">General Manager</p>
+                            <p class="company-name mb-1">Mamdos <span class="location">— Liverpool</span></p>
+                            <ul>
+                                <li>Met with each associate to establish realistic monthly sales goals.</li>
+                                <li>Communicated store policy violations to upper management to prevent shrinkage and misconduct.</li>
+                                <li>Enhanced data collection accuracy by preparing, authoring, and updating communications and policy memoranda.</li>
+                                <li>Coordinated, led, and executed brand presentations for trade or trend shows and new partners to generate and drive product awareness and sales.</li>
+                                <li>Supervised, developed, and delegated tasks to employees.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="date-range mb-0">01/2015 to 08/2018</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p class="job-title mb-0">Manager</p>
+                            <p class="company-name mb-1">Stone Target <span class="location">— Liverpool</span></p>
+                            <ul>
+                                <li>Offered constructive criticism regarding quality assurance on collections team phone calls.</li>
+                                <li>Developed open and professional relationships with team members, enabling better, more effective issue resolution.</li>
+                                <li>Analyzed employee workloads to meet seasonal fluctuation needs.</li>
+                                <li>Implemented new team onboarding program, reducing training time from seven weeks to three.</li>
+                                <li>Integrated process improvements continuously to increase overall workflow.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="date-range mb-0">10/2012 to 12/2014</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p class="job-title mb-0">Team Leader</p>
+                            <p class="company-name mb-1">TX Training <span class="location">— Liverpool</span></p>
+                            <ul>
+                                <li>Generated £4,000 in annual savings by implementing a new workflow process and reducing wasted resources.</li>
+                                <li>Adeptly handled 23 inbound calls per day, generating £20,000 in sales revenue annually.</li>
+                                <li>Managed team of 12, overseeing the hiring, training, and professional growth of employees.</li>
+                                <li>Supported General Manager in improving operations and resolving issues to deliver top-notch customer service.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">EDUCATION</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p class="date-range mb-0">2012</p>
+                    </div>
+                    <div class="col-md-9">
+                        <p class="job-title mb-0">M.Sc.: Business Management</p>
+                        <p class="company-name mb-0">University of Liverpool <span class="location">— Liverpool, UK</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <h2 class="left-col-title">SKILLS</h2>
+            </div>
+            <div class="col-md-9 content-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="skills-list">
+                            <li>Performance improvements</li>
+                            <li>Client relations</li>
+                            <li>Team oversight</li>
+                            <li>Staff supervision</li>
+                            <li>Contract development and management</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="skills-list">
+                            <li>Complex problem solving</li>
+                            <li>Communication skills</li>
+                            <li>Strategies and goals</li>
+                            <li>Profit and loss accountability</li>
+                            <li>Sales planning and implementation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <h2 class="left-col-title">LANGUAGES</h2>
+            </div>
+            <div class="col-md-9 content-container">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <strong>German:</strong>
+                            <span class="badge bg-secondary">B2</span>
+                        </div>
+                        <div class="d-flex language-bar mt-2" style="gap: 2px; padding: 0;">
+                            <div class="language-progress" style="width: 16%; background-color: #17a2b8;"></div>
+                            <div class="language-progress" style="width: 16%; background-color: #17a2b8;"></div>
+                            <div class="language-progress" style="width: 16%; background-color: #17a2b8;"></div>
+                            <div class="language-progress" style="width: 16%; background-color: #17a2b8;"></div>
+                            <div class="language-progress" style="width: 16%; background-color: #17a2b84D;"></div> 
+                            <div class="language-progress" style="width: 16%;"></div>
+                        </div>
+                        <p class="language-level mb-0">Upper Intermediate</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <strong>Italian:</strong>
+                            <span class="badge bg-secondary">A2</span>
+                        </div>
+                        <div class="d-flex language-bar mt-2" style="gap: 2px; padding: 0;">
+                            <div class="language-progress" style="width: 16%; background-color: #17a2b8;"></div>
+                            <div class="language-progress" style="width: 16%; background-color: #17a2b8;"></div>
+                            <div class="language-progress" style="width: 16%;"></div>
+                            <div class="language-progress" style="width: 16%;"></div>
+                            <div class="language-progress" style="width: 16%;"></div>
+                            <div class="language-progress" style="width: 16%;"></div>
+                        </div>
+                        <p class="language-level mb-0">Elementary</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
